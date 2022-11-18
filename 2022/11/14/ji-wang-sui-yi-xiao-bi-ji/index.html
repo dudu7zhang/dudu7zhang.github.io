@@ -56,7 +56,9 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0"></head>
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
 
 
 <body>
@@ -438,7 +440,7 @@
 <tr>
 <th>网络号</th>
 <th>距离</th>
-<th>直接交互&#x2F;下一个</th>
+<th>直接交互/下一个</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -452,7 +454,7 @@
 <td></td>
 </tr>
 </tbody></table>
-<img src="计网随意小笔记/1.png" alt="1" style="zoom:50%;" />
+<img src="计网随意小笔记/1.png" alt="1" style="zoom:50%;">
 
 <p>交换结构？</p>
 <p>上面的图片是从下往上，送到网络层之后，路由器要处理分组，？</p>
@@ -464,21 +466,21 @@
 <p>网络层主要实现的是<strong>局域网的互联</strong></p>
 <p><strong>服务的可靠和连接的关系？</strong></p>
 <p>可靠：指的是数据没有丢失、损坏或重复；</p>
-<p>是采用应答来实现，即<strong>可靠&#x2F;不可靠</strong>可以用<strong>有&#x2F;无应答</strong>来区分</p>
+<p>是采用应答来实现，即<strong>可靠/不可靠</strong>可以用<strong>有/无应答</strong>来区分</p>
 <p>面向连接：本质是保证数据的顺序传送</p>
 <p>特征是数据传送必须经过建立连接、传送数据和拆除连接三个阶段。</p>
 <p>它俩没有关系！</p>
-<h4 id="IP地址编制方法"><a href="#IP地址编制方法" class="headerlink" title="IP地址编制方法"></a>IP地址编制方法</h4><p>网际协议IP是TCP&#x2F;IP体系中两个最主要的协议之一。与IP协议配套使用的还有四个协议：</p>
+<h4 id="IP地址编制方法"><a href="#IP地址编制方法" class="headerlink" title="IP地址编制方法"></a>IP地址编制方法</h4><p>网际协议IP是TCP/IP体系中两个最主要的协议之一。与IP协议配套使用的还有四个协议：</p>
 <p>ARP: Address Resolution Protocol 地址解析协议</p>
 <p>RARP: Reverse Address Resolution Protocol</p>
 <p>ICMP: Internet Control Message Protocol 因特网控制报文协议</p>
-<img src="计网随意小笔记/2.png" alt="2" style="zoom:50%;" />
+<img src="计网随意小笔记/2.png" alt="2" style="zoom:50%;">
 
 <h4 id="IP地址编址的三个阶段"><a href="#IP地址编址的三个阶段" class="headerlink" title="IP地址编址的三个阶段"></a>IP地址编址的三个阶段</h4><p>IP地址编址的三个阶段</p>
 <h4 id="分类的IP地址"><a href="#分类的IP地址" class="headerlink" title="分类的IP地址"></a><u><strong>分类的IP地址</strong></u></h4><p>每一类地址由<strong>两个</strong>固定长度的字段组成</p>
 <p>其中一个字段是网络号，标志主机（或路由器）连接到的网络</p>
 <p>另一个字段是主机号，标志该主机（或路由器）</p>
-<img src="计网随意小笔记/3.png" alt="3" style="zoom:40%;" />
+<img src="计网随意小笔记/3.png" alt="3" style="zoom:40%;">
 
 <p>A类地址的网络号字段为1字节（8bit 8位）</p>
 <p><strong>A类 1-126</strong> </p>
@@ -542,14 +544,14 @@
 <p>局域网内只有交换机</p>
 <p>局域网之间才有路由器，对</p>
 <p>以太网是一种局域网技术，使用交换机连接不同设备。</p>
-<p>以太网的标准拓扑结构为总线型拓扑，但快速以太网（<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/100BASE-T?fromModule=lemma_inlink">100BASE-T</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/1000BASE-T?fromModule=lemma_inlink">1000BASE-T</a>标准）为了减少冲突，将能提高的网络速度和使用效率最大化，使用交换机来进行网络连接和组织。如此一来，以太网的拓扑结构就成了<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%98%9F%E5%9E%8B?fromModule=lemma_inlink">星型</a>；但在逻辑上，以太网仍然使用总线型拓扑和<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/CSMA%2FCD?fromModule=lemma_inlink">CSMA&#x2F;CD</a>（Carrier Sense Multiple Access&#x2F;Collision Detection，即载波多重访问&#x2F;碰撞侦测）的总线技术。</p>
+<p>以太网的标准拓扑结构为总线型拓扑，但快速以太网（<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/100BASE-T?fromModule=lemma_inlink">100BASE-T</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/1000BASE-T?fromModule=lemma_inlink">1000BASE-T</a>标准）为了减少冲突，将能提高的网络速度和使用效率最大化，使用交换机来进行网络连接和组织。如此一来，以太网的拓扑结构就成了<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%98%9F%E5%9E%8B?fromModule=lemma_inlink">星型</a>；但在逻辑上，以太网仍然使用总线型拓扑和<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/CSMA%2FCD?fromModule=lemma_inlink">CSMA/CD</a>（Carrier Sense Multiple Access/Collision Detection，即载波多重访问/碰撞侦测）的总线技术。</p>
 <p><strong>局域网内部是交换机</strong> 交换机是特殊的网桥，</p>
 <h4 id="用转发器或网桥连接起来的若干个局域网仍为一个网络，这些局域网都有具有同样的net-id。"><a href="#用转发器或网桥连接起来的若干个局域网仍为一个网络，这些局域网都有具有同样的net-id。" class="headerlink" title="用转发器或网桥连接起来的若干个局域网仍为一个网络，这些局域网都有具有同样的net-id。"></a>用转发器或网桥连接起来的若干个局域网仍为一个网络，这些局域网都有具有同样的net-id。</h4><h4 id="也就是说：局域网之间可以用转发器连接，网桥连接，那这还是一个局域网，比如下图中的-B-。"><a href="#也就是说：局域网之间可以用转发器连接，网桥连接，那这还是一个局域网，比如下图中的-B-。" class="headerlink" title="也就是说：局域网之间可以用转发器连接，网桥连接，那这还是一个局域网，比如下图中的**B**。"></a><strong>也就是说：</strong>局域网之间可以用转发器连接，网桥连接，那这还是一个局域网，比如下图中的**<u>B</u>**。</h4><p>或者路由器连接。</p>
 <p>网络和网络之间是路由器</p>
 <h5 id="这里还可以再回顾一下前面第一章的内容：基础知识，能否有更加深入的理解。"><a href="#这里还可以再回顾一下前面第一章的内容：基础知识，能否有更加深入的理解。" class="headerlink" title="这里还可以再回顾一下前面第一章的内容：基础知识，能否有更加深入的理解。"></a>这里还可以再回顾一下前面第一章的内容：基础知识，能否有更加深入的理解。</h5><p>仅是局域网内部访问，根本不需要路由器，只要交换机即可。</p>
-<h4 id="在同一个局域网上的主机或路由器的IP地址中的网络号必须是一样的"><a href="#在同一个局域网上的主机或路由器的IP地址中的网络号必须是一样的" class="headerlink" title="在同一个局域网上的主机或路由器的IP地址中的网络号必须是一样的"></a>在<strong>同一个局域网上</strong>的主机或路由器的IP地址中的<strong>网络号</strong>必须是一样的</h4><img src="计网随意小笔记/4.png" alt="4" style="zoom:50%;" />
+<h4 id="在同一个局域网上的主机或路由器的IP地址中的网络号必须是一样的"><a href="#在同一个局域网上的主机或路由器的IP地址中的网络号必须是一样的" class="headerlink" title="在同一个局域网上的主机或路由器的IP地址中的网络号必须是一样的"></a>在<strong>同一个局域网上</strong>的主机或路由器的IP地址中的<strong>网络号</strong>必须是一样的</h4><img src="计网随意小笔记/4.png" alt="4" style="zoom:50%;">
 
-<img src="D:\note\5.png" alt="5" style="zoom:50%;" />
+<img src="D:\note\5.png" alt="5" style="zoom:50%;">
 
 <p>总结一下这几句话：</p>
 <p>1.用转发器或网桥连接起来的若干个局域网仍为一个网络，因此这些局域网都具有同样的网络号</p>
@@ -557,22 +559,22 @@
 <h4 id="子网的划分："><a href="#子网的划分：" class="headerlink" title="子网的划分："></a><u>子网的划分：</u></h4><p>子网的划分纯属一个单位内部的事情。</p>
 <p>从主机号借用若干个比特作为子网号，因此host-id相应减少了若干个比特</p>
 <p>下图是B类地址，前两位要一样，属于同一网络。</p>
-<img src="计网随意小笔记/16.png" alt="16" style="zoom:67%;" />
+<img src="计网随意小笔记/16.png" alt="16" style="zoom:67%;">
 
 
 
 <p>子网掩码</p>
 <p>从一个IP数据包的首部无法判断源主机或目的主机所连接的网络是否进行了子网划分</p>
 <p>使用子网掩码可以很方便地找出IP地址中的子网部分</p>
-<img src="计网随意小笔记/17.png" alt="17" style="zoom:50%;" />
+<img src="计网随意小笔记/17.png" alt="17" style="zoom:50%;">
 
-<img src="D:\note\18.png" alt="18" style="zoom:50%;" />
+<img src="D:\note\18.png" alt="18" style="zoom:50%;">
 
 <p>子网掩码不一定</p>
 <p>IP地址与子网掩码做AND运算，观察结果是否为网络地址</p>
 <p>IP地址逐一和子网掩码作运算，看和网络地址是否对应</p>
 <p>子网掩码是判断IP地址属于哪个子网（路由表记录目的网络地址和子网掩码）</p>
-<img src="计网随意小笔记/19.png" alt="19" style="zoom:50%;" />
+<img src="计网随意小笔记/19.png" alt="19" style="zoom:50%;">
 
 <p>非Internet连接的网络地址：</p>
 <p>LAN 局域网 子网</p>
@@ -596,7 +598,7 @@
 <p>0000 0000</p>
 <h4 id="构成超网：无分类编址方法"><a href="#构成超网：无分类编址方法" class="headerlink" title="构成超网：无分类编址方法"></a><u>构成超网：无分类编址方法</u></h4><h4 id="无分类编址CIDR"><a href="#无分类编址CIDR" class="headerlink" title="无分类编址CIDR"></a>无分类编址CIDR</h4><p>Classless Inter-Domain Routing 无分类域间路由选择</p>
 <p>e.g</p>
-<p>128.14.32.0&#x2F;20</p>
+<p>128.14.32.0/20</p>
 <p>表示前20位是网络号，后12位是主机号</p>
 <p>10000000 00001110 0010       0000 00000000</p>
 <p>10000000 00001110 0010       1111 11111111</p>
@@ -604,38 +606,38 @@
 <p>一个CIDR地址块可以表示很多地址，这种地址的聚合成为路由聚合。</p>
 <p>路由聚合也称为<strong>构成超网（super netting)</strong></p>
 <p>仍然使用<strong>掩码</strong>这一名词</p>
-<p>对于&#x2F;20地址块，前20保持不变，则掩码就是20个连续的1，可以说，斜杠后面的数就是掩码中1的个数。</p>
+<p>对于/20地址块，前20保持不变，则掩码就是20个连续的1，可以说，斜杠后面的数就是掩码中1的个数。</p>
 <p><strong>IP</strong>和<strong>掩码</strong>做<strong>与运算</strong> 得到最长前缀</p>
 <p>如果两个都匹配，选择最长前缀的地址，最长前缀匹配</p>
-<img src="计网随意小笔记/20.png" alt="20" style="zoom:50%;" />
+<img src="计网随意小笔记/20.png" alt="20" style="zoom:50%;">
 
 <p>二叉线索中的各个路径就代表路由表中存放的各个地址。</p>
 <p>IP数据报格式：</p>
 <p>IP数据包是干啥？是要传送消息，然后一层一层往下，剥开</p>
 <p>一个IP数据包由由首部和数据两部分组成。</p>
-<img src="计网随意小笔记/6.png" alt="6" style="zoom:45%;" />
+<img src="计网随意小笔记/6.png" alt="6" style="zoom:45%;">
 
 <p>IP首部长度的最大值是60字节。首部固定部分是固定长度20字节，可变部分长度是可变的。</p>
 <p>服务类型规定对本数据报的处理方式。</p>
 <p>总长度表示首部和数据之和的长度，单位为字节。因此数据报的最大长度为2的16次方减1个字节，</p>
-<img src="计网随意小笔记/7.png" alt="7" style="zoom:80%;" />
+<img src="计网随意小笔记/7.png" alt="7" style="zoom:80%;">
 
 <p>也就是说，切8字节的倍数？</p>
-<img src="计网随意小笔记/8.png" alt="8" style="zoom:50%;" />
+<img src="计网随意小笔记/8.png" alt="8" style="zoom:50%;">
 
-<p>协议字段指出此数据报携带的数据使用何种协议（如TCP&#x2F;UDP）</p>
+<p>协议字段指出此数据报携带的数据使用何种协议（如TCP/UDP）</p>
 <p>以便<strong>目的主机的IP层将数据部分上交给哪个处理过程</strong></p>
-<img src="计网随意小笔记/9.png" alt="9" style="zoom:50%;" />
+<img src="计网随意小笔记/9.png" alt="9" style="zoom:50%;">
 
 <p>首部检验和字段只检验数据报的首部，不包括数据部分，这里不采用CRC检验码而是采用简单的算术计算方法。</p>
-<img src="计网随意小笔记/10.png" alt="10" style="zoom:67%;" />
+<img src="计网随意小笔记/10.png" alt="10" style="zoom:67%;">
 
 <p>这是怎么个事儿，如下，加一起</p>
-<img src="计网随意小笔记/11.png" alt="11" style="zoom:90%;" />
+<img src="计网随意小笔记/11.png" alt="11" style="zoom:90%;">
 
-<img src="计网随意小笔记/12.png" alt="12" style="zoom:50%;" />
+<img src="计网随意小笔记/12.png" alt="12" style="zoom:50%;">
 
-<img src="计网随意小笔记/13.png" alt="13" style="zoom:50%;" />
+<img src="计网随意小笔记/13.png" alt="13" style="zoom:50%;">
 
 <h4 id="分组转发算法："><a href="#分组转发算法：" class="headerlink" title="分组转发算法："></a>分组转发算法：</h4><p>1.从数据包的首部提取目的站的IP地址D，得出目的网络地址为N</p>
 <p>2.若网络N与此路由器直接连接，则直接将数据包交付给目的站D，否则是间接交付，执行（3）</p>
@@ -646,9 +648,9 @@
 <p>实际中路由器如何转发分组：</p>
 <p>当路由器收到待转发的数据报，送交下层的网络接口软件。</p>
 <p>网络接口软件使用ARP负责将下一条路由器的IP地址转换成硬件地址，并将此硬件地址放在链路层的MAC帧的首部，然后根据这个硬件地址找到下一跳路由器。</p>
-<img src="计网随意小笔记/14.png" alt="14" style="zoom:70%;" />
+<img src="计网随意小笔记/14.png" alt="14" style="zoom:70%;">
 
-<img src="计网随意小笔记/15.png" alt="14" style="zoom:70%;" />
+<img src="计网随意小笔记/15.png" alt="14" style="zoom:70%;">
 
 
 
@@ -663,7 +665,7 @@
 <p> 因特网有两大类<strong>路由选择协议</strong>：</p>
 <p>内部网关协议IGP Interior Gateway Protocol，即在一个自治系统内部使用的路由选择协议</p>
 <p>外部网关协议EGP External Gateway Protocol 在自治系统之间的</p>
-<img src="计网随意小笔记/21.png" alt="21" style="zoom:67%;" />
+<img src="计网随意小笔记/21.png" alt="21" style="zoom:67%;">
 
 <p>RIP Routing Information Protocol</p>
 <p>是一种分布式的基于距离向量的路由选择协议</p>
@@ -699,29 +701,29 @@
 <p>3.构造并发布链路状态分组</p>
 <p>各节点测得延时后，构造状态分组，并向邻节点发布。各路由器根据得到的邻节点送来的最新状态分组，计算新路由。</p>
 <p>4.地杰斯特拉计算最短路径</p>
-<img src="计网随意小笔记/22.png" alt="22" style="zoom:50%;" />
+<img src="计网随意小笔记/22.png" alt="22" style="zoom:50%;">
 
 <p>RIP仅向自己相邻的路由器发送信息，但是包含了和已知的各个路由器的连接信息（到所有网络的距离以及下一条路由器）</p>
 <p>OSPF向本自治系统中所有路由器发送信息，发送的信息是与本路由器相邻的所有路由器的链路状态。</p>
 <p>只有当链路状态发生变化时，路由器才用洪泛法向所有路由器发送此消息</p>
 <p>RIP定期发送</p>
 <p>OSPF的区域（将一个自治系统再划分为若干个更小的范围）</p>
-<img src="计网随意小笔记/23.png" alt="23" style="zoom:50%;" />
+<img src="计网随意小笔记/23.png" alt="23" style="zoom:50%;">
 
 <p>OSPF是直接用IP数据包传送，IP数据报首部的协议字段值是89</p>
-<img src="计网随意小笔记/24.png" alt="24" style="zoom:50%;" />
+<img src="计网随意小笔记/24.png" alt="24" style="zoom:50%;">
 
-<img src="计网随意小笔记/25.png" alt="25" style="zoom:50%;" />
+<img src="计网随意小笔记/25.png" alt="25" style="zoom:50%;">
 
-<img src="计网随意小笔记/28.png" alt="28" style="zoom:67%;" />
+<img src="计网随意小笔记/28.png" alt="28" style="zoom:67%;">
 
-<img src="计网随意小笔记/26.png" alt="26" style="zoom:50%;" />
+<img src="计网随意小笔记/26.png" alt="26" style="zoom:50%;">
 
 <p>外部网关协议BGP</p>
 <p>每一个自治系统的管理员要选择至少一个路由器作为该自治系统的“BGP发言人”</p>
 <p>一般来说，两个BGP发言人都是通过一个共享网络连接在一起，而BGP发言人往往就是BGP边界路由器，但也可以不是BGP边界路由器。</p>
 <p>一个 BGP 发言人与其他自治系统中的 BGP 发言人要交换路由信息，就要先建立 TCP 连接，<br>然后在此连接上交换 BGP 报文以建立 BGP 会话(session)，利用 BGP 会话交换路由信息。  </p>
-<img src="计网随意小笔记/27.png" alt="27" style="zoom:60%;" />
+<img src="计网随意小笔记/27.png" alt="27" style="zoom:60%;">
 
 
 
@@ -734,25 +736,25 @@
 <p><strong>端口是用来标志应用层的进程。</strong></p>
 <p>每个进程对应一个端口</p>
 <p>协议字段：TCP是</p>
-<img src="计网随意小笔记/9.png" alt="9" style="zoom:67%;" />
+<img src="计网随意小笔记/9.png" alt="9" style="zoom:67%;">
 
 <p><img src="/%E8%AE%A1%E7%BD%91%E9%9A%8F%E6%84%8F%E5%B0%8F%E7%AC%94%E8%AE%B0/35.png" alt="35"></p>
 <p>进程之间的通信：</p>
 <p>IP分用：<strong>TCP是6，UDP是17</strong></p>
 <p>运输层的分用依靠不同的端口，将其上交给不同的应用进程</p>
 <p>端口用一个16位2的16次方，也就是2^6*2的10次方</p>
-<p>16位，每位0&#x2F;1，那么有2的16次方种情况：</p>
+<p>16位，每位0/1，那么有2的16次方种情况：</p>
 <p>一共是加一起是2^16-1，加上00000000000的情况</p>
 <p>1K是2的10次方</p>
 <p>1M是2的20次方</p>
 <p>1G是2的30次方</p>
 <p>端口号只具有本地意义</p>
 <p><strong>两类端口</strong></p>
-<img src="计网随意小笔记/36.png" alt="36" style="zoom:67%;" />
+<img src="计网随意小笔记/36.png" alt="36" style="zoom:67%;">
 
-<img src="D:\note\37.png" alt="37" style="zoom: 67%;" />
+<img src="D:\note\37.png" alt="37" style="zoom: 67%;">
 
-<img src="计网随意小笔记/38.png" alt="38" style="zoom:67%;" />
+<img src="计网随意小笔记/38.png" alt="38" style="zoom:67%;">
 
 <p>服务端口号：登记端口号：1024-49151</p>
 <p>客户端口号：49152-65535</p>
@@ -764,13 +766,13 @@
 <p>TCP根据对方给出的窗口值和当前网络的拥塞程序来决定一个报文段应包含多少个字节（UDP发送的报文长度是应用进程给出的）。</p>
 <p>TCP可以把太长的数据块划分短一些再发送，或者基类足够多的字节后再构成报文段发送出去。</p>
 <p>TCP报文段（segment）</p>
-<img src="计网随意小笔记/39.png" alt="39" style="zoom:70%;" />
+<img src="计网随意小笔记/39.png" alt="39" style="zoom:70%;">
 
 <p>序号字段指本报文段所发送数据的第一个字节的序号：<br>e.g 若序号字段值为301，携带数据共100字节；则本报文段数据的第一个字节的序号为301，最后一个字节的序号为400，那么下一个报文段的序号字段为401</p>
 <p>数据偏移：就是首部长度，指TCP报文段的数据起始处距离TCP报文段的起始处有多远。</p>
 <p><strong>数据偏移的单位是32位（以4字节为计算单位</strong></p>
-<p><strong>SYN&#x3D;1表示这是一个连接请求或者连接接受报文</strong></p>
-<p>FIN&#x3D;1表示此报文段的发送端的数据已经发送完毕，并要求释放运输连接</p>
+<p><strong>SYN=1表示这是一个连接请求或者连接接受报文</strong></p>
+<p>FIN=1表示此报文段的发送端的数据已经发送完毕，并要求释放运输连接</p>
 <p>窗口字段，用来<strong>控制对方发送的数据量</strong>，单位为字节，</p>
 <p>TCP连接的一端根据设置的缓存空间大小确定自己接收窗口的大小，然后通知对方以确定对方的发sing窗口的上限。</p>
 <p><strong>设一个报文段确认号是701，窗口字段是1000</strong></p>
@@ -781,7 +783,7 @@
 <p>窗口扩大选项 时间戳 选择确认</p>
 <p><strong>TCP报文结构</strong></p>
 <p>IP和端口的组合 套接字socket</p>
-<p>套接字&#x3D;（IP地址：端口号）</p>
+<p>套接字=（IP地址：端口号）</p>
 <p>TCP连接的端点：套接字</p>
 <p>TCP连接的建立和释放：</p>
 <p>连接建立，数据传送、连接释放</p>
@@ -791,22 +793,22 @@
 <p>三次握手：</p>
 <p>开始都是close</p>
 <p>第一步：客户主动打开，服务器被动打开，</p>
-<p>A的TCP向B发出连接请求报文段，SYN（标志位）&#x3D;1，并选择序号seq &#x3D; x，表明传送数据时的第一个数据字节的序号是x，</p>
+<p>A的TCP向B发出连接请求报文段，SYN（标志位）=1，并选择序号seq = x，表明传送数据时的第一个数据字节的序号是x，</p>
 <p>窗口大小 标志位 序号 确认号 一定掌握</p>
 <p>第二个报文：</p>
 <p>SYN请求和请求的确认</p>
-<p>SYN &#x3D; 1，[ACK &#x3D; 1，确认号ack &#x3D; x+1]，自己选择的序号seq &#x3D; y。</p>
+<p>SYN = 1，[ACK = 1，确认号ack = x+1]，自己选择的序号seq = y。</p>
 <p>第三个报文：（确认的确认）</p>
-<p>[ACK &#x3D; 1（是确认报文），ack &#x3D; y+1]，<strong>seq &#x3D; x+1；</strong>seq号和方向有关</p>
-<img src="计网随意小笔记/29.png" alt="29" style="zoom:67%;" />
+<p>[ACK = 1（是确认报文），ack = y+1]，<strong>seq = x+1；</strong>seq号和方向有关</p>
+<img src="计网随意小笔记/29.png" alt="29" style="zoom:67%;">
 
 <p>TCP连接释放：对称释放</p>
-<p>A-&gt;B FIN  &#x3D; 1 seq &#x3D; u</p>
-<p>B-&gt;A ACK &#x3D; 1, ack &#x3D; u+1 seq &#x3D; v</p>
+<p>A-&gt;B FIN  = 1 seq = u</p>
+<p>B-&gt;A ACK = 1, ack = u+1 seq = v</p>
 <p>A到B关了 B到A还是通的</p>
-<p>B-&gt;A FIN &#x3D; 1 <strong>ACK&#x3D;1 ack&#x3D;u+1</strong>（为啥？？？？） seq &#x3D; w &#x3D;f(v)(传送多少数据是能算出来的)</p>
-<p>A-&gt;B ACK&#x3D;1，seq &#x3D; u+1 ack&#x3D;w+1</p>
-<img src="计网随意小笔记/30.png" alt="30" style="zoom:50%;" />
+<p>B-&gt;A FIN = 1 <strong>ACK=1 ack=u+1</strong>（为啥？？？？） seq = w =f(v)(传送多少数据是能算出来的)</p>
+<p>A-&gt;B ACK=1，seq = u+1 ack=w+1</p>
+<img src="计网随意小笔记/30.png" alt="30" style="zoom:50%;">
 
 
 
@@ -841,30 +843,30 @@
 <p>当采用3Bit编码，发送窗口最大值是7，</p>
 <p>选择重传的ARQ协议：</p>
 <p><strong>接收窗口的尺寸</strong></p>
-<p><strong>2的（n-1）次方</strong>，也就是序号范围的1&#x2F;2</p>
+<p><strong>2的（n-1）次方</strong>，也就是序号范围的1/2</p>
 <p>停止等待协议</p>
-<p>TD&#x2F;TD+TA+RTT</p>
+<p>TD/TD+TA+RTT</p>
 <p>连续发送n个帧，连续ARQ</p>
-<p>信道利用率：nTD&#x2F;TD+TA+RTT</p>
+<p>信道利用率：nTD/TD+TA+RTT</p>
 <p>小窗口ARQ nTD&lt;TD+RTT+TA</p>
-<p>大窗口ARQ nTD&gt;&#x3D;TD+RTT+TA  信道利用率为1</p>
-<img src="计网随意小笔记/32.png" alt="32" style="zoom:50%;" />
+<p>大窗口ARQ nTD&gt;=TD+RTT+TA  信道利用率为1</p>
+<img src="计网随意小笔记/32.png" alt="32" style="zoom:50%;">
 
 <h3 id="滑动窗口协议："><a href="#滑动窗口协议：" class="headerlink" title="滑动窗口协议："></a>滑动窗口协议：</h3><p><strong>是停等协议和连续ARQ协议的折中</strong></p>
-<img src="计网随意小笔记/33.png" alt="33" style="zoom:50%;" />
+<img src="计网随意小笔记/33.png" alt="33" style="zoom:50%;">
 
 <p>确认号是B期望收到的序列号</p>
-<img src="计网随意小笔记/41.png" alt="41" style="zoom:50%;" />
+<img src="计网随意小笔记/41.png" alt="41" style="zoom:50%;">
 
-<img src="D:\note\42.png" alt="42" style="zoom:50%;" />
-
-
-
-<img src="计网随意小笔记/43.png" alt="43" style="zoom:50%;" />
+<img src="D:\note\42.png" alt="42" style="zoom:50%;">
 
 
 
-<img src="计网随意小笔记/44.png" alt="44" style="zoom:50%;" />
+<img src="计网随意小笔记/43.png" alt="43" style="zoom:50%;">
+
+
+
+<img src="计网随意小笔记/44.png" alt="44" style="zoom:50%;">
 
 
 
@@ -920,7 +922,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://dudu7zhang.github.io/2022/11/14/%E8%AE%A1%E7%BD%91%E9%9A%8F%E6%84%8F%E5%B0%8F%E7%AC%94%E8%AE%B0/">https://dudu7zhang.github.io/2022/11/14/%E8%AE%A1%E7%BD%91%E9%9A%8F%E6%84%8F%E5%B0%8F%E7%AC%94%E8%AE%B0/</a>
+                    <a href="https://dudu7zhang.github.io/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/">https://dudu7zhang.github.io/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1079,7 +1081,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/11/14/My-first-blog-1/">
+                <a href="/2022/11/14/my-first-blog-1/">
                     <div class="card-image">
                         
                         
