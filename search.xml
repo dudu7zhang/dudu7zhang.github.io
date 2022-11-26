@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2022/11/19/chu-shi-rust/"/>
+      <url>/2022/11/19/chu-shi-rust/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-安装Rust"><a href="#1-安装Rust" class="headerlink" title="1.安装Rust"></a>1.安装Rust</h2><h3 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h3><p>rustup是Rust的安装程序，也是它的版本管理程序，所以使用rustup安装Rust。</p><p>Windows上安装Rust需要有C++环境，本人选择以下这个方式安装C++环境</p><p><strong>x86_64-pc-windows-msvc（官方推荐）</strong></p><p>先安装 <a href="https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/">Microsoft C++ Build Tools</a> ,安装时可以自行修改缓存路径与安装路径。安装完成后，Rust所需要的msvc命令行程序需要手动添加到环境变量中，其位于</p><p>D:\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.34.31933\bin\Hostx64\x64（本人电脑路径）</p><p>准备好C++环境后，开始安装Rust:</p><p>下载RUSTUP-INIT，下载下来之后，打开是一个黑窗口，然后输入1，就开始安装Rust。</p><h3 id="检查是否安装成功"><a href="#检查是否安装成功" class="headerlink" title="检查是否安装成功"></a>检查是否安装成功</h3><p>通过rustc -V及cargo -V两个命令，如果看到版本号等信息，证明安装成功。</p><p>RISC-V并不是一个具体的处理器或架构，只是一个规范</p><p>因此有很多芯片都可以基于此规范</p><p>处理器的内核</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>pic?</title>
       <link href="/2022/11/14/pic/"/>
       <url>/2022/11/14/pic/</url>
@@ -30,19 +43,6 @@
             <tag> 网络层、传输层 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>My first blog</title>
-      <link href="/2022/11/14/my-first-blog-1/"/>
-      <url>/2022/11/14/my-first-blog-1/</url>
-      
-        <content type="html"><![CDATA[<p>My first blog is established. </p><p>Since the last year, I have the idea. </p><p>But that time I was stupid with little professional knowledge. </p><p>So this time, I come back. 55</p><p>2022/11/14 </p><p>duduzhang</p>]]></content>
-      
-      
       
     </entry>
     
