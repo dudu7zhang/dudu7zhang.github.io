@@ -4,12 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="计网随意小笔记, dudu55">
+    <meta name="keywords" content="计网网络层+传输层随写, dudu55">
     <meta name="description" content="5.1路由器在互联网中的作用直接交付和间接交付
 交换结构：分组处理：转发表《-》路由选择处理机：路由选择协议-路由表
 明确：分组交换和路由器的关系
 当前理解：分组交换需要用到路由表。
-转发和路由选择的区别：转发(forwarding)：就是">
+转发和路由的区别
+转发(forwarding)：就是路由">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +22,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>计网随意小笔记 | dudu55</title>
+    <title>计网网络层+传输层随写 | dudu55</title>
     <link rel="icon" type="image/png" href="/medias/favicon.png">
     
 
@@ -272,12 +273,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">计网随意小笔记</h1>
+                    <h1 class="description center-align post-title">计网网络层+传输层随写</h1>
                 </div>
             </div>
         </div>
@@ -345,7 +346,8 @@
 <p><strong>交换</strong>结构：分组处理：转发表<strong>《-》</strong>路由选择处理机：路由选择协议-路由表</p>
 <p><strong>明确</strong>：分组交换和路由器的关系</p>
 <p>当前理解：分组交换需要用到路由表。</p>
-<h3 id="转发和路由选择的区别："><a href="#转发和路由选择的区别：" class="headerlink" title="转发和路由选择的区别："></a><strong>转发和路由选择的区别：</strong></h3><p><strong>转发(forwarding)<strong>：就是</strong>路由器</strong>根据转发表将用户的IP数据报从合适的端口转发出去。</p>
+<p>转发和路由的区别</p>
+<p><strong>转发(forwarding)<strong>：就是</strong>路由器</strong>根据转发表将用户的IP数据报从合适的端口转发出去。</p>
 <p>区分：端口，交换机，路由器</p>
 <p>**路由选择(routing)**：按照分布式算法，根据从各相邻路由器得到的关于网络拓扑的变化情况，动态地改变所选择的路由。</p>
 <p>路由表是根据路由选择算法得出的，而转发表是根据路由表得出的。</p>
@@ -409,7 +411,7 @@
 <img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/2.png" alt="2" style="zoom:50%;">
 
 <h4 id="IP地址编址的三个阶段"><a href="#IP地址编址的三个阶段" class="headerlink" title="IP地址编址的三个阶段"></a>IP地址编址的三个阶段</h4><p>IP地址编址的三个阶段</p>
-<h4 id="分类的IP地址"><a href="#分类的IP地址" class="headerlink" title="分类的IP地址"></a><u><strong>分类的IP地址</strong></u></h4><p>每一类地址由<strong>两个</strong>固定长度的字段组成</p>
+<h5 id="分类的IP地址"><a href="#分类的IP地址" class="headerlink" title="分类的IP地址"></a><u><strong>分类的IP地址</strong></u></h5><p>每一类地址由<strong>两个</strong>固定长度的字段组成</p>
 <p>其中一个字段是网络号，标志主机（或路由器）连接到的网络</p>
 <p>另一个字段是主机号，标志该主机（或路由器）</p>
 <img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/3.png" alt="3" style="zoom:40%;">
@@ -478,17 +480,20 @@
 <p>以太网是一种局域网技术，使用交换机连接不同设备。</p>
 <p>以太网的标准拓扑结构为总线型拓扑，但快速以太网（<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/100BASE-T?fromModule=lemma_inlink">100BASE-T</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/1000BASE-T?fromModule=lemma_inlink">1000BASE-T</a>标准）为了减少冲突，将能提高的网络速度和使用效率最大化，使用交换机来进行网络连接和组织。如此一来，以太网的拓扑结构就成了<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%98%9F%E5%9E%8B?fromModule=lemma_inlink">星型</a>；但在逻辑上，以太网仍然使用总线型拓扑和<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/CSMA%2FCD?fromModule=lemma_inlink">CSMA/CD</a>（Carrier Sense Multiple Access/Collision Detection，即载波多重访问/碰撞侦测）的总线技术。</p>
 <p><strong>局域网内部是交换机</strong> 交换机是特殊的网桥，</p>
-<h4 id="用转发器或网桥连接起来的若干个局域网仍为一个网络，这些局域网都有具有同样的net-id。"><a href="#用转发器或网桥连接起来的若干个局域网仍为一个网络，这些局域网都有具有同样的net-id。" class="headerlink" title="用转发器或网桥连接起来的若干个局域网仍为一个网络，这些局域网都有具有同样的net-id。"></a>用转发器或网桥连接起来的若干个局域网仍为一个网络，这些局域网都有具有同样的net-id。</h4><h4 id="也就是说：局域网之间可以用转发器连接，网桥连接，那这还是一个局域网，比如下图中的-B-。"><a href="#也就是说：局域网之间可以用转发器连接，网桥连接，那这还是一个局域网，比如下图中的-B-。" class="headerlink" title="也就是说：局域网之间可以用转发器连接，网桥连接，那这还是一个局域网，比如下图中的**B**。"></a><strong>也就是说：</strong>局域网之间可以用转发器连接，网桥连接，那这还是一个局域网，比如下图中的**<u>B</u>**。</h4><p>或者路由器连接。</p>
+<p>用转发器或网桥连接起来的若干个局域网仍为一个网络，这些局域网都有具有同样的net-id。</p>
+<p>也就是说：局域网之间可以用转发器连接，网桥连接，那这还是一个局域网，比如下图中的B</p>
+<p>或者路由器连接。</p>
 <p>网络和网络之间是路由器</p>
 <h5 id="这里还可以再回顾一下前面第一章的内容：基础知识，能否有更加深入的理解。"><a href="#这里还可以再回顾一下前面第一章的内容：基础知识，能否有更加深入的理解。" class="headerlink" title="这里还可以再回顾一下前面第一章的内容：基础知识，能否有更加深入的理解。"></a>这里还可以再回顾一下前面第一章的内容：基础知识，能否有更加深入的理解。</h5><p>仅是局域网内部访问，根本不需要路由器，只要交换机即可。</p>
-<h4 id="在同一个局域网上的主机或路由器的IP地址中的网络号必须是一样的"><a href="#在同一个局域网上的主机或路由器的IP地址中的网络号必须是一样的" class="headerlink" title="在同一个局域网上的主机或路由器的IP地址中的网络号必须是一样的"></a>在<strong>同一个局域网上</strong>的主机或路由器的IP地址中的<strong>网络号</strong>必须是一样的</h4><img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/4.png" alt="4" style="zoom:50%;">
+<p>在<strong>同一个局域网上</strong>的主机或路由器的IP地址中的<strong>网络号</strong>必须是一样的</p>
+<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/4.png" alt="4" style="zoom:50%;">
 
-<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/note\5.png" alt="5" style="zoom:50%;">
+<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/5.png" alt="5" style="zoom:50%;">
 
 <p>总结一下这几句话：</p>
 <p>1.用转发器或网桥连接起来的若干个局域网仍为一个网络，因此这些局域网都具有同样的网络号</p>
 <p>2.同一个局域网的主机的ip地址的网络号必须是一样的</p>
-<h4 id="子网的划分："><a href="#子网的划分：" class="headerlink" title="子网的划分："></a><u>子网的划分：</u></h4><p>子网的划分纯属一个单位内部的事情。</p>
+<h5 id="子网的划分："><a href="#子网的划分：" class="headerlink" title="子网的划分："></a>子网的划分：</h5><p>子网的划分纯属一个单位内部的事情。</p>
 <p>从主机号借用若干个比特作为子网号，因此host-id相应减少了若干个比特</p>
 <p>下图是B类地址，前两位要一样，属于同一网络。</p>
 <img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/16.png" alt="16" style="zoom:50%;">
@@ -500,7 +505,7 @@
 <p>使用子网掩码可以很方便地找出IP地址中的子网部分</p>
 <img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/17.png" alt="17" style="zoom:50%;">
 
-<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/note\18.png" alt="18" style="zoom:50%;">
+<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/18.png" alt="18" style="zoom:50%;">
 
 <p>子网掩码不一定</p>
 <p>IP地址与子网掩码做AND运算，观察结果是否为网络地址</p>
@@ -528,7 +533,7 @@
 <p>001，010，011,100,101,110</p>
 <p>1110 0000 掩码 </p>
 <p>0000 0000</p>
-<h4 id="构成超网：无分类编址方法"><a href="#构成超网：无分类编址方法" class="headerlink" title="构成超网：无分类编址方法"></a><u>构成超网：无分类编址方法</u></h4><h4 id="无分类编址CIDR"><a href="#无分类编址CIDR" class="headerlink" title="无分类编址CIDR"></a>无分类编址CIDR</h4><p>Classless Inter-Domain Routing 无分类域间路由选择</p>
+<h5 id="构成超网：无分类编址CIDR"><a href="#构成超网：无分类编址CIDR" class="headerlink" title="构成超网：无分类编址CIDR"></a>构成超网：无分类编址CIDR</h5><p>Classless Inter-Domain Routing 无分类域间路由选择</p>
 <p>e.g</p>
 <p>128.14.32.0/20</p>
 <p>表示前20位是网络号，后12位是主机号</p>
@@ -562,10 +567,10 @@
 <img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/9.png" alt="9" style="zoom:50%;">
 
 <p>首部检验和字段只检验数据报的首部，不包括数据部分，这里不采用CRC检验码而是采用简单的算术计算方法。</p>
-<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/10.png" alt="10" style="zoom:67%;">
+<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/10.png" alt="10" style="zoom:60%;">
 
 <p>这是怎么个事儿，如下，加一起</p>
-<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/11.png" alt="11" style="zoom:90%;">
+<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/11.png" alt="11" style="zoom:70%;">
 
 <img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/12.png" alt="12" style="zoom:50%;">
 
@@ -655,7 +660,7 @@
 <p>每一个自治系统的管理员要选择至少一个路由器作为该自治系统的“BGP发言人”</p>
 <p>一般来说，两个BGP发言人都是通过一个共享网络连接在一起，而BGP发言人往往就是BGP边界路由器，但也可以不是BGP边界路由器。</p>
 <p>一个 BGP 发言人与其他自治系统中的 BGP 发言人要交换路由信息，就要先建立 TCP 连接，<br>然后在此连接上交换 BGP 报文以建立 BGP 会话(session)，利用 BGP 会话交换路由信息。  </p>
-<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/27.png" alt="27" style="zoom:60%;">
+<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/27.png" alt="27" style="zoom:50%;">
 
 
 
@@ -685,11 +690,11 @@
 <p>1G是2的30次方</p>
 <p>端口号只具有本地意义</p>
 <p><strong>两类端口</strong></p>
-<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/36.png" alt="36" style="zoom:67%;">
+<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/36.png" alt="36" style="zoom:50%;">
 
 <img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/note\37.png" alt="37" style="zoom: 67%;">
 
-<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/38.png" alt="38" style="zoom:67%;">
+<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/38.png" alt="38" style="zoom:50%;">
 
 <p>服务端口号：登记端口号：1024-49151</p>
 <p>客户端口号：49152-65535</p>
@@ -701,7 +706,7 @@
 <p>TCP根据对方给出的窗口值和当前网络的拥塞程序来决定一个报文段应包含多少个字节（UDP发送的报文长度是应用进程给出的）。</p>
 <p>TCP可以把太长的数据块划分短一些再发送，或者基类足够多的字节后再构成报文段发送出去。</p>
 <p>TCP报文段（segment）</p>
-<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/39.png" alt="39" style="zoom:70%;">
+<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/39.png" alt="39" style="zoom:50%;">
 
 <p>序号字段指本报文段所发送数据的第一个字节的序号：<br>e.g 若序号字段值为301，携带数据共100字节；则本报文段数据的第一个字节的序号为301，最后一个字节的序号为400，那么下一个报文段的序号字段为401</p>
 <p>数据偏移：就是首部长度，指TCP报文段的数据起始处距离TCP报文段的起始处有多远。</p>
@@ -735,7 +740,7 @@
 <p>SYN = 1，[ACK = 1，确认号ack = x+1]，自己选择的序号seq = y。</p>
 <p>第三个报文：（确认的确认）</p>
 <p>[ACK = 1（是确认报文），ack = y+1]，<strong>seq = x+1；</strong>seq号和方向有关</p>
-<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/29.png" alt="29" style="zoom:67%;">
+<img src="/2022/11/14/ji-wang-sui-yi-xiao-bi-ji/29.png" alt="29" style="zoom:50%;">
 
 <p>TCP连接释放：对称释放</p>
 <p>A-&gt;B FIN  = 1 seq = u</p>
@@ -947,13 +952,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/11/14/pic/">
+                <a href="/2022/11/26/rust/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="pic?">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Rust">
                         
-                        <span class="card-title">pic?</span>
+                        <span class="card-title">Rust</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -964,7 +969,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-11-14
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-11-26
                         </span>
                         <span class="publish-author">
                             
@@ -973,6 +978,14 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Rust%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">Rust学习</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -988,9 +1001,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="计网随意小笔记">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="计网网络层+传输层随写">
                         
-                        <span class="card-title">计网随意小笔记</span>
+                        <span class="card-title">计网网络层+传输层随写</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
